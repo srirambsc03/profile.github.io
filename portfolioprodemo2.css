@@ -60,8 +60,8 @@ nav ul li a:hover{
     transform: scale(1.2);
 }
 .content{
-    position: absolute;
-    top: 50%;
+    position: relative;
+    top: 20%;
     left: 8%;
     transform: translateY(-50%);
 }
@@ -286,7 +286,7 @@ footer p:nth-child(1){
 footer p:nth-child(2){
     color: white;
     font-size: 20px;
-    width: 500px;
+    width: auto;
     text-align: center;
     line-height: 30px;
 }
@@ -340,14 +340,13 @@ footer p:nth-child(2){
     }
 }
 .images .im{
-    width: 100%;
-    position: absolute;
+    width: auto;
     transform-style: preserve-3d;
     animation: rotate 30s linear infinite;
 }
 @keyframes rotate{
     form{
-
+        transform: rotatex(60deg);
     }
     to{
         transform: rotateY(360deg);
@@ -377,6 +376,7 @@ footer p:nth-child(2){
     cursor: pointer;
 
 }
+
 /* contact me user id */
 .contact-left p i{
     color: blue;
@@ -422,4 +422,45 @@ input.input1{
     height: 400px;
     width:100%;
     background-color: #000;
+}
+@media (max-width:500px){
+    .container .images .im{
+        display:inline-block;
+        justify-content:center;
+        align-items:center;
+        text-align: center;
+        height: 100px;
+        width: auto;
+    }
+    .contact2{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .contact2 .sub-title{
+        display:flex;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+    }
+    .service .title{
+        display:flex;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+    }
+    .main .about-text{
+        display:inline-block;
+        align-items: center;
+        justify-content: start;
+        text-align: center;
+    }
+    .main img{
+        height: 300px;
+        width:300px;
+        display:flex;
+        align-items: center;
+        text-align: center;
+    }
+
 }
